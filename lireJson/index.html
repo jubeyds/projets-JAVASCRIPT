@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Lire un fichier JSON</h1>
+
+    <div id="user-info">
+        <h2>Nom: <span id="nom"></span></h2>
+        <p>Âge: <span id="age"></span></p>
+        <p>Ville: <span id="ville"></span></p>
+        <p>Pays: <span id="pays"></span></p>
+    </div>
+
+    <script>
+        fetch('./nom.json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('nom').textContent = data.nom;
+                document.getElementById('age').textContent = data.age;
+                document.getElementById('ville').textContent = data.ville;
+                document.getElementById('pays').textContent = data.pays;
+            })
+            .catch(error => {
+                console.error('Erreur lors de la récupération du fichier JSON :', error);
+            });
+    </script>
+
+</body>
+</html>
