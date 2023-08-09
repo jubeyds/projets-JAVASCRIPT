@@ -1,0 +1,45 @@
+
+body{
+
+    
+    background-image: url("./image/europe_countries_2048.jpg");
+
+
+    
+
+
+
+}
+
+
+
+
+.region {
+    fill: #ccc;
+    cursor: pointer;
+}
+
+
+#region-info {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none; /* Masquer les informations de la région par défaut */
+    margin-right: 700px;
+    margin-top: 100px;
+}
+
+
+
+#departements {
+    list-style-type: none;
+    padding: 0;
+}
+
+#departements li {
+    margin-bottom: 5px;
+}
