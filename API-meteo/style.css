@@ -1,0 +1,14 @@
+.titre{
+    width: 300px; /* Largeur de la div */
+    margin: 0 auto; /* Centre horizontalement */
+    padding: 20px;
+    background-color: rgb(199, 154, 154); /* Fond de couleur bleue */
+    border-radius: 10px; /* Border radius pour arrondir les coins */
+    color: white; /* Texte en couleur blanche */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow pour l'ombre */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    position: relative;
+    margin-top: 50px;
+}
